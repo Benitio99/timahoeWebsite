@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Timahoe Chamber of Commerce</title>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta name="author" content="Pierce Bennett">
+		<meta name="copyright" content="© 2018 Pierce Bennett">
+		<meta name="language" content="EN">
+		<link href="style/master.css" rel="stylesheet">
+		<noscript><p>Javascript is not enabled in your browser.</p></noscript>
+		<link rel="icon" href="resources/images/icon.ico">
+	</head>			<!-- End of head -->
+	
+	<body>
+		<a class="top"></a>
+		<header>
+			<div id="logo">
+				<a href="index.html">
+					<img alt="TCC Logo" src="resources/images/logo.png"></img>
+				</a>
+			</div>
+			<h1>Timahoe Chamber of Commerce</h1>
+		</header>		<!-- End of header -->
+		<nav>
+            <audio id="navSound">
+                <source src="resources/audio/swoosh.mp3" type="audio/mp3"></source>
+                <source src="resources/audio/swoosh.wav" type="audio/x-ms-wma"></source>
+                <source src="resources/audio/swoosh.ogg" type="audio/ogg"></source>
+            </audio>
+			<div id="navWrapper" onmouseenter="document.getElementById('navSound').play()" onmouseleave="document.getElementById('navSound').play()">
+                <div class="hamburger">
+                    <div class="bar" id="barOne"></div>
+                    <div class="bar" id="barTwo"></div>
+                    <div class="bar" id="barThree"></div>
+                </div>
+				<ul class="navLinks">
+					<li id="currentPage"><a href = "index.html" title="Home Page">Home Page</a></li>
+					<li><a href = "interest.html" title="Points of Interest">Points of Interest</a></li>
+					<li><a href = "activities.html" title="Activities">Activities</a></li>
+					<li><a href = "accomodation.html" title="Accomodation">Accomodation</a></li>
+					<li><a href="links.html" title="External Links">External Links</a></li>
+				</ul>
+			</div>
+		</nav>			<!-- End of nav -->
+        <main>
+            <div>
+                <h2>Welcome to Timahoe!</h2>
+                <br>
+                <figure class="left">
+                    <img src="resources/images/llama.jpg" alt="A Cottage" />
+                    <figcaption>Rock of Dunamaise</figcaption>
+                </figure>
+                <h3> I would like to introduce you to a little town in County Laois called Timahoe.</h3>
+
+                <br>
+                <p>
+                    A small idyllic village of around 600 hundred people, Timahoe has alot to offer visitors in the way of heritage and services.
+                    All activities revolve around the centre of the village, commonly known as 'The Green'. A tipple can be had in one of the two
+                    local public houses. Supplies can be found in 'The Corner Shop'. An upholstery shop provides a quality service to its patrons.
+                </p>
+                <p>
+                    And last but certainly not least, the heritage centre is able to cater for all the history buffs out there looking to find out
+                    more about our wonderful and unique Round Tower, which is one of the best examples of such structures in the country. More on
+                    this in the History Section!
+                </p>
+                <p>
+                    Please feel free to wander the village at your leisure. and take in all that Timahoe has to offer. Our business owners are always
+                    at hand to give a helping hand to any travellers for all that they might need. Enjoy!!! 
+                </p>
+            </div>
+            <hr>
+            <div>
+                <div class="map">
+                    <div class="canvas">
+                        <figure>
+                            <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=timahoe%20co%20laois&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                            <figcaption>Timahoe Village</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <br>
+                <p>
+                    Timahoe is situated just 20 minutes from Portlaoise in County Laois along the R426.
+                </p>
+            </div>
+            <hr>
+            <div>
+                <h3><u>Rock of Dunamaise</u></h3>
+                
+                <p>
+                    Just 10 minutes drive from Timahoe is the prominent features of the Rock of Dunamaise.
+                    This Fortress stands atop a 45-metre mound overlooking the valley of the O' Mores
+                </p>
+                <br>
+                <p>
+                    This Fortress has seen much upheaval over the centuries with various forces fighting for
+                    control of this strategic monument to history. Please visit and venture back in time.
+                </p>
+            </div>
+        </main>			<!-- End of main -->
+		<footer>
+			© 2019 Pierce Bennett | <a href="#top">Back to Top</a> | E-mail: <a href = "mailto:timahoechamber@outlook.com">Timahoe Chamber of Commerce</a>
+		</footer>		<!-- End of footer -->
+	</body>			<!-- End of body -->
+</html>			<!-- End of html -->

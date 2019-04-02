@@ -1,0 +1,258 @@
+:root {
+  --lightRed: #e98074;
+  --mediumRed: #e85a4f;
+  --light: #eae7dc;
+  --darkRed: #91130b;
+  --slate: #8e8d8a;
+  --oliveAccent: #61892f;
+  --offWhite: #d8c3a5;
+}
+@font-face {
+	font-family: "headerFont";
+	src: url(../resources/fonts/wicked_grit/WickedGrit.ttf);
+}
+@font-face {
+	font-family: "mainFont";
+	src: url(../resources/fonts/campuni/CampuniDemo-Regular.otf);
+}
+body {
+    height: 100%;
+    font-size: 100%;
+    background-color: var(--light);
+    display: grid;
+    grid-template-columns: auto 75em auto;
+    grid-template-rows: 10vmin auto 10vmin;
+    grid-template-areas: ". header ." ". main ." ". footer .";
+    grid-gap: 10em;
+    font-family: "mainFont";
+    color: black;
+    
+}
+/* Font Settings*/
+h1 {
+	text-align: center;
+    font-size: 3.5em;
+}
+h2{
+    text-align: center;
+    font-size: 2.5em;
+}
+h3{
+    text-align: center;
+    font-size: 2em;
+}
+p {
+    font-size: 1.5em;
+}
+/*link settings*/
+a {
+	text-decoration: none;
+}
+main a {
+    color: var(--darkRed);
+}
+header {
+	height: 12vh;
+	width: 100%;
+	grid-area: header;
+	background-color: var(--mediumRed);
+	padding: 2em;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+header > h1 {
+    font-family: "headerFont";
+    color: var(--light);
+}
+#logo > a > img {
+    position: relative;
+    height: 5em;
+    width: 5em;
+    left: 2em;
+}
+nav {
+    position: fixed;
+    height: 100vh;
+    left: -15em;
+    text-align: center;
+    z-index: 10;
+}
+#navWrapper {
+	position: absolute;
+	width: 16em;
+	left: .5em;
+	height: 100%;
+	background-color:var(--lightRed);
+	transition: all 400ms ease-out;
+	opacity: .3;
+	border-right: .2em solid #333;
+	margin: auto;
+}
+#navWrapper:hover{
+    position: relative;
+    left: 14em;
+    opacity: .9;
+}
+.hamburger {
+    position: absolute;
+    left: 90%;
+    width: 4.5em;
+    height: 4.5em;
+    background-color: var(--mediumRed);
+    top: 10.2em;
+    border-right: .2em solid #333;
+    opacity: 1;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    vertical-align:middle;
+}
+.bar {
+    position: absolute;
+    left: 12.5%;
+    width: 75%;
+    height: 10%;
+    background: var(--darkRed);
+    display: inline-block;
+}
+#barOne {
+    top: 20%;
+}
+#barTwo {
+    top: 45%   
+}
+#barThree {
+    top: 70%;
+}
+div > ul {
+    cursor: pointer;
+    position: relative;
+    top: 5em;
+    padding: 2em;
+}
+div > ul > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    margin: auto;
+    margin-bottom: 1em;
+    width: 10em;
+    height: 1em;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 400ms ease-in-out;
+    background-color: var(--mediumRed);
+    box-sizing: border-box;
+}
+ul > li:hover{
+	background-color: var(--darkRed);
+}
+ul > li:hover a{
+	color: white;
+}
+div > ul > li > a{
+	transition: all 400ms ease-in-out;
+	color: black;
+}
+#currentPage {
+	background-image: linear-gradient(90deg, var(--darkRed) 8%, var(--mediumRed) 8%);
+}
+main {
+    grid-area: main;
+    background: var(--offWhite);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    
+}
+main > div {
+    margin-top: 1em;
+
+}
+main h2 {
+    padding-bottom: 1em;
+}
+main h3 {
+    margin: auto;
+}
+main p {
+    padding: 1em;
+    line-height: 1.5em;
+}
+hr {
+    width: 85%;
+    margin: auto;
+    margin-top: 1em;
+}
+figure {
+    padding: 0 2em 0 2em;
+}
+figure.right {
+    float: right;
+}
+figure.left {
+    float: left;
+}
+figcaption {
+    padding: .5em;
+    width: 100%;
+    text-align: center;
+}
+.map {
+    float: right;
+    text-align: right;
+    height: 500px;
+    width: 570px;
+    border: groove .4em var(--oliveAccent);
+    border-radius: .5em;
+    margin: 1em;
+}
+.canvas {
+    position: relative;
+    overflow: hidden;
+    background: none !important;
+    left: -31px;
+    height: 500px;
+    width: 600px;
+}
+table {
+    display: table;
+    width: 55%;
+    font: 1.2em verdana;
+    box-sizing: border-box;
+    margin: 1em;
+    border-left: .2em solid var(--darkRed);
+}
+thead {
+    background: var(--oliveAccent);
+    color: white;
+}
+tbody {
+    background: var(--light);
+}
+tr {
+    padding: .2em;
+    border-bottom: 1px solid var(--slate);
+}
+th {
+}
+td {
+    padding: .3em;
+    text-align: center;
+}
+footer {
+	width: 100%;
+	padding: 2em;
+	grid-area: footer;
+	background: var(--slate);
+}
+footer > a {
+	color:var(--darkRed);
+}
+a[href^="mailto"]:hover:after {
+    content: " > Send E-mail Now";
+    color: var(--offWhite);
+}
